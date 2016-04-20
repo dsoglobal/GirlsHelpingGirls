@@ -32,6 +32,21 @@ textarea {
     color: #222;
 }
 
+#nav-header {
+    position:fixed;
+    top:0px;
+    margin:5px;
+    z-index:100000;
+    width:100%;
+}
+
+.header-link {
+    color: black;
+    background-color: white;
+    padding: 5px;
+    opacity: 0.5;
+}
+
 body {
     font-size: 1.3em;
     line-height: 1.4;
@@ -136,39 +151,6 @@ section {
 }
 main {
 	overflow-x: hidden;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-image:url('../img/bar2.jpg');
-    /*background-color: #000000;*/
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-li {
-    float: right;
-}
-
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #31269C;
 }
 
 .img {

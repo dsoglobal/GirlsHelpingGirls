@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="js/nav.js"></script>
         <style type="text/css">
 			.back-link a {
 				color: #4ca340;
@@ -59,14 +61,13 @@
         <header>
         </hearder>
        	<main>
-            
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-            
+            <div id="nav-header">
+                <span class="header-link" id="fact-link">Fact</span>
+                <span class="header-link" id="change-link">We Want Change</span>
+                <span class="header-link" id="story-link">Our Story</span>
+                <span class="header-link" id="contribution-link">Your Contribution</span>
+            </div>
+
             <section id="slide-1" class="homeSlide">
                 <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
                     <div class="hsContainer">
@@ -82,7 +83,7 @@
 		    	<div class="bcg"  data-0="background-color:rgb(1,27,59);"data-top="background-color:rgb(0,0,0);" data-anchor-target="#slide-2">
 			    	<div class="hsContainer">
 			    		<div class="hsContent">
-				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Fact</h2>
+				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2" id="slide-2-title">Fact</h2>
 				    		<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Over 200 million girls have been lost due to gendercide. Girls around the world are aborted, abandoned, and killed because women are valued less than men. </p>
 			    		</div>
 		        	</div>
