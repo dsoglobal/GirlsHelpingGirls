@@ -40,6 +40,8 @@
             //console.log(data.curTop);
         }
     });
+
+    skrollr.menu.init(s);
     
     // Get window size
       winH = $window.height();

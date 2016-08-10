@@ -25,10 +25,10 @@
 
     <main>
       <div id="nav-header">
-        <span class="header-link" id="fact-link">Fact</span>
-        <span class="header-link" id="change-link">We Want Change</span>
-        <span class="header-link" id="story-link">Our Story</span>
-        <span class="header-link" id="contribution-link">Your Contribution</span>
+        <a class="header-link" href="#slide-2">Fact</a>
+        <a class="header-link" href="#slide-3">We Want Change</a>
+        <a class="header-link" href="#slide-5">Our Story</a>
+        <a class="header-link" href="#slide-7">Your Contribution</a>
       </div>
 
       <section id="slide-1" class="homeSlide">
@@ -77,8 +77,9 @@
           data-anchor-target="#slide-3"
           >
           <div class="hsContainer"
-            data-center="opacity: 1"
             data-100-top="opacity: 0"
+            data-center="opacity: 1"
+            data-100-bottom="opacity: 0"
             data-anchor-target="#slide-3 h2"
             >
             <div class="hsContent">
@@ -118,24 +119,16 @@
           data-top-bottom="background-position: 50% -100px;"
           data-anchor-target="#slide-5"
           >
-          <div class="curtainContainer">
-            <div class="curtain"
-              data-bottom-top="opacity: 0"
-              data-100-top="height: 1%; top: -10%; opacity: 0;"
-              data-center="height: 100%; top: 0%; opacity: 0.5"
-              data-anchor-target="#slide-5"
-              ></div>
-            <div class="copy"
-              data-bottom-top="opacity: 0"
-              data--100-bottom="opacity: 0"
-              data--280-bottom="opacity: 1;"
-              data-280-top="opacity: 1;"
-              data-100-top="opacity: 0;"
-              data-anchor-target="#slide-5 .copy"
-              >
+          <div class="hsContainer"
+            data-100-bottom="opacity: 0"
+            data-center="opacity: 1"
+            data-100-top="opacity: 0"
+            data-anchor-target="#slide-5 h2"
+            >
+            <div class="hsContent">
               <h2>Our Story</h2>
             </div>
-            
+          </div>
           </div>
         </div>
       </section>
@@ -167,25 +160,18 @@
           data-top-bottom="background-position: 50% -100px;"
           data-anchor-target="#slide-7"
           >
-          <div class="curtainContainer">
-            <div class="curtain"
-              data-bottom-top="opacity: 0"
-              data-100-top="height: 1%; top: -10%; opacity: 0;"
-              data-center="height: 100%; top: 0%; opacity: 0.5"
-              data-anchor-target="#slide-7"
-              ></div>
-            <div class="copy"
-              data-bottom-top="opacity: 0"
-              data--100-bottom="opacity: 0"
-              data--280-bottom="opacity: 1;"
-              data-280-top="opacity: 1;"
-              data-100-top="opacity: 0;"
-              data-anchor-target="#slide-7 .copy"
-              >
+          <div class="hsContainer"
+            data-100-bottom="opacity: 0"
+            data-center="opacity: 1"
+            data-100-top="opacity: 0"
+            data-anchor-target="#slide-7 h2"
+            >
+            <div class="hsContent">
               <h2>Give, Build, Educate</h2>
-              <p>Click Here to Donate.</p>
+              <p>
+                <a href="#">Donate Today</a>
+              </p>
             </div>
-            
           </div>
         </div>
       </section>
@@ -195,6 +181,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
+    <script src="js/skrollr.menu.js"></script>
     <script src="js/_main.js"></script>
 
   </body>
