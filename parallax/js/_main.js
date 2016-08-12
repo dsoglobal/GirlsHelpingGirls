@@ -14,7 +14,7 @@
   $window = $(window);
   $body = $('body');
   
-    //FadeIn all sections   
+    // FadeIn all sections   
   $body.imagesLoaded( function() {
     setTimeout(function() {
       
@@ -31,11 +31,12 @@
     
     // Init Skrollr
     var s = skrollr.init({
-        render: function(data) {
-        
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
+      forceHeight: false,
+      render: function(data) {
+      
+          // Debugging - Log the current scroll position.
+          //console.log(data.curTop);
+      }
     });
 
     // Init Skrollr menu
