@@ -21,17 +21,15 @@
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    <header></header>
+    <nav>
+      <a class="header-link" href="#slide-2">Fact</a>
+      <a class="header-link" href="#slide-3">We Want Change</a>
+      <a class="header-link" href="#slide-5">Our Story</a>
+      <a class="header-link" href="#slide-7">Your Contribution</a>
+    </nav>
 
     <main>
-      <div id="nav-header">
-        <span class="header-link" id="fact-link">Fact</span>
-        <span class="header-link" id="change-link">We Want Change</span>
-        <span class="header-link" id="story-link">Our Story</span>
-        <span class="header-link" id="contribution-link">Your Contribution</span>
-      </div>
-
-      <section id="slide-1" class="homeSlide">
+      <section id="slide-1">
         <div class="bcg"
           data-center="background-position: 50% 0px;"
           data-top-bottom="background-position: 50% -100px;"
@@ -51,8 +49,8 @@
       </section>
       
       <section id="slide-2">
-        <div class="bcg"
-          data-bottom="background-color: rgb(232, 130, 157);"
+        <div class="bcg bcg-short"
+          data-center="background-color: rgb(232, 130, 157);"
           data-top="background-color: rgb(57, 47, 45);"
           data-anchor-target="#slide-2"
           >
@@ -70,15 +68,16 @@
         </div>
       </section>
       
-      <section id="slide-3" class="homeSlide">
+      <section id="slide-3">
         <div class="bcg"
           data-center="background-position: 50% 0px;"
           data-top-bottom="background-position: 50% -200px;"
           data-anchor-target="#slide-3"
           >
           <div class="hsContainer"
-            data-center="opacity: 1"
             data-100-top="opacity: 0"
+            data-center="opacity: 1"
+            data-100-bottom="opacity: 0"
             data-anchor-target="#slide-3 h2"
             >
             <div class="hsContent">
@@ -90,8 +89,8 @@
       </section>
       
       <section id="slide-4">
-        <div class="bcg"
-          data-bottom="background-color: rgb(232, 130, 157);"
+        <div class="bcg bcg-short"
+          data-center="background-color: rgb(232, 130, 157);"
           data-top="background-color: rgb(57, 47, 45);"
           data-anchor-target="#slide-4"
           >
@@ -111,38 +110,30 @@
         </div>
       </section>     
       
-      <section id="slide-5" class="homeSlide homeSlideTall">
+      <section id="slide-5">
         <div class="bcg"
           data-center="background-position: 50% 0px;"
           data-bottom-top="background-position: 50% 100px;"
           data-top-bottom="background-position: 50% -100px;"
           data-anchor-target="#slide-5"
           >
-          <div class="curtainContainer">
-            <div class="curtain"
-              data-bottom-top="opacity: 0"
-              data-100-top="height: 1%; top: -10%; opacity: 0;"
-              data-center="height: 100%; top: 0%; opacity: 0.5"
-              data-anchor-target="#slide-5"
-              ></div>
-            <div class="copy"
-              data-bottom-top="opacity: 0"
-              data--100-bottom="opacity: 0"
-              data--280-bottom="opacity: 1;"
-              data-280-top="opacity: 1;"
-              data-100-top="opacity: 0;"
-              data-anchor-target="#slide-5 .copy"
-              >
+          <div class="hsContainer"
+            data-100-bottom="opacity: 0"
+            data-center="opacity: 1"
+            data-100-top="opacity: 0"
+            data-anchor-target="#slide-5 h2"
+            >
+            <div class="hsContent">
               <h2>Our Story</h2>
             </div>
-            
+          </div>
           </div>
         </div>
       </section>
       
       <section id="slide-6">
-        <div class="bcg"
-          data-bottom="background-color: rgb(232, 130, 157);"
+        <div class="bcg bcg-short"
+          data-center="background-color: rgb(232, 130, 157);"
           data-top="background-color: rgb(57, 47, 45);"
           data-anchor-target="#slide-6"
           >
@@ -160,32 +151,25 @@
         </div>
       </section>
       
-      <section id="slide-7" class="homeSlide homeSlideTall">
+      <section id="slide-7">
         <div class="bcg"
           data-center="background-position: 50% 0px;"
           data-bottom-top="background-position: 50% 100px;"
           data-top-bottom="background-position: 50% -100px;"
           data-anchor-target="#slide-7"
           >
-          <div class="curtainContainer">
-            <div class="curtain"
-              data-bottom-top="opacity: 0"
-              data-100-top="height: 1%; top: -10%; opacity: 0;"
-              data-center="height: 100%; top: 0%; opacity: 0.5"
-              data-anchor-target="#slide-7"
-              ></div>
-            <div class="copy"
-              data-bottom-top="opacity: 0"
-              data--100-bottom="opacity: 0"
-              data--280-bottom="opacity: 1;"
-              data-280-top="opacity: 1;"
-              data-100-top="opacity: 0;"
-              data-anchor-target="#slide-7 .copy"
-              >
+          <div class="hsContainer"
+            data-100-bottom="opacity: 0"
+            data-center="opacity: 1"
+            data-100-top="opacity: 0"
+            data-anchor-target="#slide-7 h2"
+            >
+            <div class="hsContent">
               <h2>Give, Build, Educate</h2>
-              <p>Click Here to Donate.</p>
+              <p>
+                <a href="#">Donate Today</a>
+              </p>
             </div>
-            
           </div>
         </div>
       </section>
@@ -195,6 +179,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
     <script src="js/imagesloaded.js"></script>
     <script src="js/skrollr.js"></script>
+    <script src="js/skrollr.menu.js"></script>
     <script src="js/_main.js"></script>
 
   </body>
