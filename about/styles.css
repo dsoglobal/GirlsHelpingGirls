@@ -1,0 +1,554 @@
+h1 {
+    	color: #9B9B9B;
+	text-align: center;
+	font-family: apple chancery;
+	font-size:40px;
+}
+
+.buy-now {
+    position: absolute;
+    left:20px;
+    top: 0px;
+    width: 250px;
+    height:250px;
+}
+
+.bracelet{
+    background:url(ghg_buy_now.png) top center no-repeat;
+    width:250px;
+    height: 250px;
+    position: absolute;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+
+
+}
+.bracelet:hover {
+    animation-play-state:running;
+}
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+.buy-now-word {
+    position:absolute;
+    font-family:apple chancery;
+    font-size:24px;
+    text-align:center;
+    line-height:250px;
+    color:black;
+    margin-top: 10px;
+    margin-left:70px;
+    pointer-events:none;
+}
+
+canvas {
+	padding: 0;
+    	margin: auto;
+	display: block;
+}
+
+.flex-container {
+    position: relative;
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+}
+
+.flex-item {
+    position: absolute;
+    background-color: #D9B9DB;
+    width: calc(62% - 2 * 40px);
+    height: calc(100% - 2 * 40px);
+    margin: 0px;
+    padding: 40px;
+    color:white;
+    font-family: candara;
+    font-style: italic;
+    font-size:24px;
+}
+
+
+.flex-image {
+    position: absolute;
+    width: 38%;
+    height: 300px;
+    margin: 0px;
+}
+
+
+canvas {
+    position: absolute;
+}
+
+.small-title {
+    line-height: 100px;
+    position: absolute;
+    width:300px;
+    height: 100px;
+    left: 350px;
+    color: #D9B9DB;
+    text-align:center;
+    font-family:apple chancery;
+    font-size:40px;
+    pointer-events:none;
+    
+
+}
+
+.titleCanvas1 {
+    left:-35%;
+    -webkit-animation-name: titleMoveToRight; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: titleMoveToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+.titleCanvas2 {
+    right:-35%;
+    -webkit-animation-name: titleMoveToLeft; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: titleMoveToLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+}
+
+.titleCanvas3 {
+    left:-35%;
+    -webkit-animation-name: titleMoveToRight; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: titleMoveToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+}
+
+.titleCanvas4 {
+    right:-35%;
+    -webkit-animation-name: titleMoveToLeft; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: titleMoveToLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes titleMoveToRight {
+    from {left: -35%;}
+    to {left: 0%;}
+}
+
+/* Standard syntax */
+@keyframes titleMoveToRight {
+    from {left: -35%;}
+    to {left: 0%;}
+}
+
+@-webkit-keyframes titleMoveToLeft {
+    from {right: -35%;}
+    to {right: 0%;}
+}
+
+/* Standard syntax */
+@keyframes titleMoveToLeft {
+    from {right: -35%;}
+    to {right: 0%;}
+}
+
+.title-line {
+    position: relative;
+    height: 100px;
+    width: 1000px;
+    margin: auto;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    z-index: 3;
+}
+
+.title-line:hover {
+    -webkit-filter: grayscale(0%); 
+    filter: grayscale(0%);
+    
+}
+
+.leftTrianglePointer {
+    position:absolute;
+    left:62%;
+}
+
+.rightTrianglePointer {
+    position:absolute;
+    right:62%;
+}
+
+.leftTriangleCurtain1 {
+    position:absolute;
+    left:58.5%;
+    -webkit-animation-name: moveToRight; 
+    -webkit-animation-duration: 1s; 
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.leftTriangleCurtain2 {
+    position:absolute;
+    right:58.5%;
+    -webkit-animation-name: moveToLeft; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s; 
+}
+
+
+.leftTriangleCurtain3 {
+    position:absolute;
+    left:58.5%;
+    -webkit-animation-name: moveToRight; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s; 
+}
+
+.leftTriangleCurtain4 {
+    position:absolute;
+    right:58.5%;
+    -webkit-animation-name: moveToLeft; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+    animation-delay: 3s; 
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveToRight {
+    from {left: 58.5%;}
+    to {left: 62%;}
+}
+
+/* Standard syntax */
+@keyframes moveToRight {
+    from {left: 58.5%;}
+    to {left: 62%;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moveToLeft {
+    from {right: 58.5%;}
+    to {right: 62%;}
+}
+
+/* Standard syntax */
+@keyframes moveToLeft {
+    from {right: 58.5%;}
+    to {right: 62%;}
+}
+
+.flex-container2 {
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+}
+
+.flex-item2 {
+    position: absolute;
+    height: 500px;
+    width: 332px;
+    background-color: white;
+}
+
+.goals {
+    position:absolute;
+    width:calc(100% - 2 * 30px);
+    height: calc(50% - 2 * 70px);
+    left:30px;
+    right: 30px;
+    font-size: 24px;
+    font-family: candara;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+
+.number {
+    position:absolute;
+    width:calc(100% - 2 * 30px);
+    height: calc(50% - 2 * 30px);
+    left:30px;
+    right: 30px;
+    font-size: 250px;
+    font-family: apple chancery;
+    font-style: italic;
+    color:#9B9B9B;
+    opacity:0.5;
+    text-align: center;
+    background-color:transparent;
+}
+
+.number:hover {
+    color:#E0B0E2;
+}
+
+.chatbox {
+    position:absolute;
+    width:calc(100% - 2 * 25px);
+    height: calc(50% - 2 * 60px);
+    left:25px;
+    right: 25px;
+}
+
+
+.title-box{
+   position:absolute;
+   width: 70%;
+   height: 22%;
+   left:15%;
+   right:15%;
+   background-color:rgba(216,216,216,0.6);
+   font-size: 44px;
+   font-family: Bernard MT Condensed;
+   color:#6C0D73;
+   text-align: center;
+}
+
+.triangle {
+    position:absolute;
+    left:calc(50% - 40px);
+    width: 0;
+    height: 0px;
+    border: solid 40px;
+}
+
+.map-container {
+    display:block;
+    position:relative;
+    background-image:url('ghg_map.png');
+    width: 1000px;
+    height: 410px;
+    margin: auto;
+}
+
+.title-box2 {
+    position:absolute;
+    width: 30%;
+    height: 24%;
+    left:4%;
+    background-color:rgba(216,216,216,0.6);
+    font-size: 30px;
+    font-family: Bernard MT Condensed;
+    color:#6C0D73;
+    text-align: center;
+}
+
+.chatbox2 {
+    position:absolute;
+    padding:40px 40px 60px 40px;
+    width:calc(50% - 2 * 40px);
+    height: calc(80% - 2 * 50px);
+    bottom: 10%;
+    text-align: left;
+    font-family: candara;
+    font-style: italic;
+    font-size: 20px;
+    //background-color:rgba(182,182,182,0.6);
+    background:
+}
+
+.triangle2 {
+    position:absolute;
+    width: 0;
+    height: 0px;
+    border: solid 40px;
+}
+
+.logBorder {
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.readMore  {
+    width: 30px;
+    height: 15px;
+    border: 2px;
+    border-color: white;
+    border-radius: 5px;
+    color:white;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.chatbox3 {
+    position:absolute;
+    padding:40px 40px 40px 40px;
+    width:calc(62% - 2 * 40px);
+    height: calc(100% - 2 * 40px);
+    text-align: left;
+    font-family: candara;
+    font-style: italic;
+    font-size: 24px;
+    //background-color:rgba(182,182,182,0.6);
+    //background:url(paper.jpg) top left no-repeat;
+}
+
+.flex-container4 {
+    position: relative;
+    height: 2000px;
+    width: 1000px;
+    margin: auto;
+}
+
+
+.pinkCircle {
+    position: absolute;
+    background-color: #E9D3E6;
+    border-radius: 100%;
+}
+
+.grayCircle {
+    position: absolute;
+    background-color: #9B9B9B;
+    border-radius: 100%;
+    height:86%;
+    width: 86%;
+    top:7%;
+    right: 7%;
+}
+
+.circleImage {
+    position:absolute;
+    height:96%;
+    width:96%;
+    left:2%;
+    top:2%
+}
+
+.transparentCircle {
+    position: absolute;
+    background-color: rgba(216,216,216,0.6);
+    border-radius: 100%;
+    height:90%;
+    width: 90%;
+    top:5%;
+    right: 5%;
+    font-family: Bernard MT Condensed;
+    color:#6C0D73;
+    text-align: center;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: 1;
+}
+
+.transparentCircle:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.flagBorder {
+    position: absolute;
+    background-color: #D8D8D8;
+    height: 110px;
+    width: 260px;
+    font-family: candara;
+    font-style: italic;
+    padding:20px;
+}
+
+
+.flag {
+   position: absolute;
+   border-right: 35px solid #D8D8D8;
+   border-top: 75px solid transparent;
+   border-bottom: 75px solid transparent;
+   width:0;
+   height:0;
+   right: 300px;
+   top:0px;
+}
+
+.smallCircle {
+   position: absolute;
+   border-radius:100%;
+   background-color: white;
+   width: 10px;
+   height: 10px;
+   top:70px;
+}
+
+.line {
+   position: absolute;
+   background-color: #9B9B9B;
+   height: 2px;
+   width: 100px;
+   top:74px;
+}
+
+.flag-right {
+   position: absolute;
+   border-left: 35px solid #D8D8D8;
+   border-top: 75px solid transparent;
+   border-bottom: 75px solid transparent;
+   width:0;
+   height:0;
+   left: 300px;
+   top:0px;
+}

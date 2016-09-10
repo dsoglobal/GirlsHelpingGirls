@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <img src="head.png" style="width:1000px;position:relative;margin-left:auto;margin-right:auto;display: block">
+        <div class="buy-now">
+            <a href="http://www.bodybijou.com/bracelets/girls-helping-girls-charity-bracelet.html" class="bracelet">
+            </a>
+            <div class="buy-now-word" title="Buy our charity charm bracelet at Body Bijou Jewelry">Buy Now</div>
+    
+        </div>
+    </head>
+    <body>
+        <div class="title-line">
+            <canvas id="lineCanvas1" width="350" height="100"></canvas>
+            <div class="small-title"> Our Story </div>
+            <canvas id="lineCanvas2" width="350" height="100" style="left:650px"></canvas>
+            
+            <script>
+                var canvas = document.getElementById("lineCanvas1");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(30,50);
+                ctx.lineTo(350,50);
+                ctx.stroke();
+                ctx.closePath();
+                
+                var canvas = document.getElementById("lineCanvas2");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(320,50);
+                ctx.lineTo(0,50);
+                ctx.stroke();
+                ctx.closePath();
+                </script>
+            
+        </div>
+        
+        <div class="flex-container">
+            <img class="flex-image" src="1-1.png" style="height:300px;left:62%" alt="Kenya Trip">
+        
+                <canvas class="leftTriangleCurtain1" id="leftTriangleCurtain1" width="90" height="300"></canvas>
+                <canvas class="leftTrianglePointer" id="leftTrianglePointer1" width="55" height="300"></canvas>
+                
+                <div class="flex-item">Susanna Manziaris was only 15 years old when she founded GirlsHelpingGirls, a not-for-profit organization that works to raise the status of women through education. GirlsHelpingGirls began when Susanna visited a rural and marginalized community in Kenya where she helped build a school.</div>
+                <canvas class="titleCanvas1" id="titleCanvas1" width="620" height="80" style="top:220px"></canvas>
+                <script>
+                    var canvas = document.getElementById("leftTriangleCurtain1");
+                    var ctx = canvas.getContext("2d");
+                    
+                    ctx.globalAlpha = 0.8;
+                    ctx.beginPath();
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(35,0);
+                    ctx.lineTo(90,150);
+                    ctx.lineTo(35,300);
+                    ctx.lineTo(0,300);
+                    ctx.lineTo(55,150);
+                    ctx.fillStyle = "#E9D3E6";
+                    ctx.fill();
+                    ctx.closePath();
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("leftTrianglePointer1");
+                    var ctx = canvas.getContext("2d");
+                    ctx.globalAlpha = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(55,150);
+                    ctx.lineTo(0,300);
+                    ctx.fillStyle = "#D9B9DB";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("titleCanvas1");
+                    var ctx = canvas.getContext("2d");
+                    var unit = 70;
+                    var space = 10;
+                    var height = 10;
+                    var scope = 15;
+                    var startY = 40;
+                    var startX = 0;
+                    for (i = 0; i < 5; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(startX,startY);
+                        ctx.lineTo(startX + unit, startY);
+                        ctx.lineTo(startX + unit - scope, startY + height);
+                        ctx.lineTo(startX - scope, startY + height);
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fill();
+                        ctx.closePath();
+                        startX += unit + space;
+                    }
+                ctx.font = "40px Bernard MT Condensed";
+                ctx.fillText("Kenya Trip",startX, startY + 20);
+                    </script>
+                
+                
+                </div>
+        <br>
+        
+        <div class="flex-container">
+            <img class="flex-image" src="1-2.png" style="height:300px" alt="Struggles">
+                
+                <canvas class="leftTriangleCurtain2" id="leftTriangleCurtain2" width="90" height="300"></canvas>
+                <canvas class="rightTrianglePointer" id="leftTrianglePointer2" width="55" height="300"></canvas>
+                
+                <div class="flex-item" style="left:38%;padding-top:30px;padding-bottom:50px;padding-left:30px;padding-right:50px;background-color:#B8B6B6">While there, Susanna saw the struggles that girls in the developing world face on an everyday basis, such as walking for hours to collect water or caring for multiple children,sometimes even their own. Women were not seen as valuable in their communities and were rather given menial labour. These girls did not show hope or aspiration for the future.</div>
+                
+                
+                
+                <canvas class="titleCanvas2" id="titleCanvas2" width="620" height="80" style="top:220px"></canvas>
+                
+                <script>
+                    var canvas = document.getElementById("leftTriangleCurtain2");
+                    var ctx = canvas.getContext("2d");
+                    
+                    ctx.globalAlpha = 0.8;
+                    ctx.beginPath();
+                    ctx.moveTo(90,0);
+                    ctx.lineTo(55,0);
+                    ctx.lineTo(0,150);
+                    ctx.lineTo(55,300);
+                    ctx.lineTo(90,300);
+                    ctx.fillStyle = "#D8D8D8";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("leftTrianglePointer2");
+                    var ctx = canvas.getContext("2d");
+                    ctx.globalAlpha = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(55,0);
+                    ctx.lineTo(0,150);
+                    ctx.lineTo(55,300);
+                    ctx.fillStyle = "#B8B6B6";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("titleCanvas2");
+                    var ctx = canvas.getContext("2d");
+                    var unit = 70;
+                    var space = 10;
+                    var height = 10;
+                    var scope = 15;
+                    var startY = 40;
+                    var startX = 620;
+                    for (i = 0; i < 5; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(startX,startY);
+                        ctx.lineTo(startX - unit, startY);
+                        ctx.lineTo(startX - unit + scope, startY + height);
+                        ctx.lineTo(startX + scope, startY + height);
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fill();
+                        ctx.closePath();
+                        startX -= unit + space;
+                    }
+                ctx.font = "40px Bernard MT Condensed";
+                ctx.fillText("Struggles",startX - 140, startY + 20);
+                    </script>
+                
+                </div>
+        
+        <br>
+        
+        <div class="flex-container">
+            <img class="flex-image" src="1-3.png" style="height:300px;left:62%" alt="Kenya Trip">
+                
+                <canvas class="leftTriangleCurtain3" id="leftTriangleCurtain3" width="90" height="300"></canvas>
+                <canvas class="leftTrianglePointer" id="leftTrianglePointer3" width="55" height="300"></canvas>
+                <div class="flex-item" style="width:calc(62% - 50px);padding-top:30px;padding-bottom:50px;padding-left:30px;padding-right:20px">While on the same trip, a highlight for Susanna was visiting an all girls boarding school. The girls that attended the school were all hopeful for the future. Many of them wanted to go on to pursue careers, such as becoming doctors, journalists, and teachers. Susanna could see that these girls were going to go on and become true leaders in their families and communities.</div>
+                
+                <canvas class="titleCanvas3" id="titleCanvas3" width="620" height="80" style="top:220px"></canvas>
+                <script>
+                    var canvas = document.getElementById("leftTriangleCurtain3");
+                    var ctx = canvas.getContext("2d");
+                    
+                    ctx.globalAlpha = 0.8;
+                    ctx.beginPath();
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(35,0);
+                    ctx.lineTo(90,150);
+                    ctx.lineTo(35,300);
+                    ctx.lineTo(0,300);
+                    ctx.fillStyle = "#E9D3E6";
+                    ctx.fill();
+                    ctx.closePath();
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("leftTrianglePointer3");
+                    var ctx = canvas.getContext("2d");
+                    ctx.globalAlpha = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(0,0);
+                    ctx.lineTo(55,150);
+                    ctx.lineTo(0,300);
+                    ctx.fillStyle = "#D9B9DB";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("titleCanvas3");
+                    var ctx = canvas.getContext("2d");
+                    var unit = 70;
+                    var space = 10;
+                    var height = 10;
+                    var scope = 15;
+                    var startY = 40;
+                    var startX = 0;
+                    for (i = 0; i < 4; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(startX,startY);
+                        ctx.lineTo(startX + unit, startY);
+                        ctx.lineTo(startX + unit - scope, startY + height);
+                        ctx.lineTo(startX - scope, startY + height);
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fill();
+                        ctx.closePath();
+                        startX += unit + space;
+                    }
+                ctx.font = "40px Bernard MT Condensed";
+                ctx.fillText("Future Leaders",startX, startY + 20);
+                    </script>
+                
+                </div>
+        <br>
+        <div class="flex-container">
+            <img class="flex-image" src="1-4.png" style="height:300px" alt="Struggles">
+                
+                <canvas class="leftTriangleCurtain4" id="leftTriangleCurtain4" width="90" height="300"></canvas>
+                <canvas class="rightTrianglePointer" id="leftTrianglePointer4" width="55" height="300"></canvas>
+                
+                <div class="flex-item" style="left:38%;padding-top:30px;padding-bottom:50px;padding-left:30px;padding-right:50px;background-color:#B8B6B6">Upon returning home from her trip Susanna saw the compelling documentary called It’s A Girl, which highlights female gendercide, the systematic killing of girls. While the producers of the documentary recommended writing in protest to governments in countries where gendercide occurs, Susanna knew that she had to do more.</div>
+                
+                
+                
+                <canvas class="titleCanvas4" id="titleCanvas4" width="620" height="80" style="top:220px"></canvas>
+                
+                <script>
+                    var canvas = document.getElementById("leftTriangleCurtain4");
+                    var ctx = canvas.getContext("2d");
+                    
+                    ctx.globalAlpha = 0.8;
+                    ctx.beginPath();
+                    ctx.moveTo(90,0);
+                    ctx.lineTo(55,0);
+                    ctx.lineTo(0,150);
+                    ctx.lineTo(55,300);
+                    ctx.lineTo(90,300);
+                    ctx.fillStyle = "#D8D8D8";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("leftTrianglePointer4");
+                    var ctx = canvas.getContext("2d");
+                    ctx.globalAlpha = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(55,0);
+                    ctx.lineTo(0,150);
+                    ctx.lineTo(55,300);
+                    ctx.fillStyle = "#B8B6B6";
+                    ctx.fill();
+                    ctx.closePath();
+                    
+                    </script>
+                
+                <script>
+                    var canvas = document.getElementById("titleCanvas4");
+                    var ctx = canvas.getContext("2d");
+                    var unit = 70;
+                    var space = 10;
+                    var height = 10;
+                    var scope = 15;
+                    var startY = 40;
+                    var startX = 620;
+                    for (i = 0; i < 4; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(startX,startY);
+                        ctx.lineTo(startX - unit, startY);
+                        ctx.lineTo(startX - unit + scope, startY + height);
+                        ctx.lineTo(startX + scope, startY + height);
+                        ctx.fillStyle = "#FFFFFF";
+                        ctx.fill();
+                        ctx.closePath();
+                        startX -= unit + space;
+                    }
+                ctx.font = "40px Bernard MT Condensed";
+                ctx.fillText("Founding of GHG",startX - 260, startY + 20);
+                    </script>
+                
+                </div>
+        <br>
+        
+        <div class="title-line">
+            <canvas id="lineCanvas3" width="350" height="100"></canvas>
+            <div class="small-title"> Our Goals </div>
+            <canvas id="lineCanvas4" width="350" height="100" style="left:650px"></canvas>
+            
+            <script>
+                var canvas = document.getElementById("lineCanvas3");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(30,50);
+                ctx.lineTo(350,50);
+                ctx.stroke();
+                ctx.closePath();
+                
+                var canvas = document.getElementById("lineCanvas4");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(320,50);
+                ctx.lineTo(0,50);
+                ctx.stroke();
+                ctx.closePath();
+                </script>
+            
+        </div>
+        <div class="flex-container2">
+            <div class="flex-item2" style="left:0px">
+                <img style="width:100%" src="2-1.png">
+                <div class="title-box" style="top:15px">Build <br> Schools</div>
+                <div class="triangle" style="bottom:calc(100% - 235px);border-color: transparent transparent white transparent;"></div>
+                <div class="goals" style="bottom:60px"> Build schools to support a healthy and stimulating learning environment.</div>
+                
+                <canvas id="chatbox1" class="chatbox" style="bottom:65px"></canvas>
+                <div class="number" style="bottom:150px;">1</div>
+                <script>
+                    var canvas = document.getElementById("chatbox1");
+                    var ctx = canvas.getContext("2d");
+                    ctx.strokeStyle = "#9B9B9B";
+                    ctx.beginPath();
+                    ctx.moveTo(25,1);
+                    ctx.lineTo(1,1);
+                    ctx.lineTo(1,canvas.height - 1);
+                    ctx.lineTo(25,canvas.height - 1);
+                    ctx.stroke();
+                    ctx.closePath();
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(canvas.width - 25,1);
+                    ctx.lineTo(canvas.width - 1,1);
+                    ctx.lineTo(canvas.width - 1,canvas.height - 1);
+                    ctx.lineTo(canvas.width - 25,canvas.height - 1);
+                    ctx.stroke();
+                    ctx.closePath();
+                </script>
+                    
+                    
+            </div>
+            
+            <div class="flex-item2" style="left:334px">
+                <img style="width:100%;position:absolute; bottom:0px" src="2-2.png">
+                <div class="title-box" style="bottom:15px">Provide<br>Teachers</div>
+                <div class="triangle" style="top:calc(100% - 235px);border-color: white transparent transparent transparent;"></div>
+                <div class="goals" style="top:70px"> Provide teachers with the proper training and resources so they can best support their students.</div>
+                <canvas id="chatbox2" class="chatbox" style="top:65px"></canvas>
+                <div class="number" style="bottom:400px;">2</div>
+                <script>
+                    var canvas = document.getElementById("chatbox2");
+                    var ctx = canvas.getContext("2d");
+                    ctx.strokeStyle = "#9B9B9B";
+                    ctx.beginPath();
+                    ctx.moveTo(25,1);
+                    ctx.lineTo(1,1);
+                    ctx.lineTo(1,canvas.height - 1);
+                    ctx.lineTo(25,canvas.height - 1);
+                    ctx.stroke();
+                    ctx.closePath();
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(canvas.width - 25,1);
+                    ctx.lineTo(canvas.width - 1,1);
+                    ctx.lineTo(canvas.width - 1,canvas.height - 1);
+                    ctx.lineTo(canvas.width - 25,canvas.height - 1);
+                    ctx.stroke();
+                    ctx.closePath();
+                    </script>
+                
+            </div>
+            
+            <div class="flex-item2" style="right:0px">
+                <img style="width:100%" src="2-3.png">
+                    <div class="title-box" style="top:15px">Create<br>Scholarships</div>
+                    <div class="triangle" style="bottom:calc(100% - 235px);border-color: transparent transparent white transparent;"></div>
+                    <div class="goals" style="bottom:50px"> Create scholarships for students to go to school.</div>
+                    
+                    <canvas id="chatbox3" class="chatbox" style="bottom:65px"></canvas>
+                    <div class="number" style="bottom:160px;">3</div>
+                    <script>
+                        var canvas = document.getElementById("chatbox3");
+                        var ctx = canvas.getContext("2d");
+                        ctx.strokeStyle = "#9B9B9B";
+                        ctx.beginPath();
+                        ctx.moveTo(25,1);
+                        ctx.lineTo(1,1);
+                        ctx.lineTo(1,canvas.height - 1);
+                        ctx.lineTo(25,canvas.height - 1);
+                        ctx.stroke();
+                        ctx.closePath();
+                        
+                        ctx.beginPath();
+                        ctx.moveTo(canvas.width - 25,1);
+                        ctx.lineTo(canvas.width - 1,1);
+                        ctx.lineTo(canvas.width - 1,canvas.height - 1);
+                        ctx.lineTo(canvas.width - 25,canvas.height - 1);
+                        ctx.stroke();
+                        ctx.closePath();
+                        </script>
+            </div>
+        </div>
+        
+        
+        <br>
+        
+        <div class="title-line">
+            <canvas id="lineCanvas5" width="350" height="100"></canvas>
+            <div class="small-title"> Global Mission </div>
+            <canvas id="lineCanvas6" width="350" height="100" style="left:650px"></canvas>
+            
+            <script>
+                var canvas = document.getElementById("lineCanvas5");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(30,50);
+                ctx.lineTo(350,50);
+                ctx.stroke();
+                ctx.closePath();
+                
+                var canvas = document.getElementById("lineCanvas6");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(320,50);
+                ctx.lineTo(0,50);
+                ctx.stroke();
+                ctx.closePath();
+                </script>
+            
+        </div>
+        
+        
+        <div id="map" class="map-container">
+        </div>
+
+        <br>
+        <div class="title-line">
+            <canvas id="lineCanvas7" width="350" height="100"></canvas>
+            <div class="small-title"> Our Blogs </div>
+            <canvas id="lineCanvas8" width="350" height="100" style="left:650px"></canvas>
+            
+            <script>
+                var canvas = document.getElementById("lineCanvas7");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(30,50);
+                ctx.lineTo(350,50);
+                ctx.stroke();
+                ctx.closePath();
+                
+                var canvas = document.getElementById("lineCanvas8");
+                var ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "#D9B9DB";
+                ctx.beginPath();
+                ctx.moveTo(320,50);
+                ctx.lineTo(0,50);
+                ctx.stroke();
+                ctx.closePath();
+                </script>
+            
+        </div>
+        
+        <div class="flex-container4">
+            <div class="pinkCircle" style="width:225px;height:225px;top:0;right:400px">
+                <div class="grayCircle">
+                    <img class="circleImage" src="4-1.png" alt="Park Mountain Primary School">
+                    
+                    <div class="flagBorder" style="left:290px;height:60px;">
+                        <div class="line" style="right:310px;top:49px"></div>
+                        <div class="flag" style="border-top: 50px solid transparent;
+                            border-bottom: 50px solid transparent;"></div>
+                        <div class="smallCircle" style="left:-20px;top:45px"></div>
+                        Park Mountain Primary School needed a new building. It was originally built in 1937 and it was in poor condition.
+                    </div>
+                    <div class="transparentCircle" style="font-size: 28px;"><br>Building<br>Park<br>Mountain School</div>
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:180px;height:180px;top:190px;right:320px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-2.png" alt="Park Mountain Primary School">
+                    <div class="transparentCircle" style="font-size:24px;"><br><br>It Just Takes <br>an Education</div>
+                    <div class="flagBorder" style="left:280px;top:40px;">
+                        <div class="line" style="right:330px;width:110px"></div>
+                        <div class="flag"></div>
+                        <div class="smallCircle" style="left:-20px"></div>
+                        Educating women raises their status in society, gives them greater credibility in the public sphere, and increases their economic power, undercutting the factors that motivate gendercide.
+
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:250px;height:250px;top:250px;left:280px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-3.png" alt="Park Mountain Primary School">
+                    <div class="transparentCircle" style="font-size: 32px;"><br><br>New School for <br> Park Mountain</div>
+                    <div class="flagBorder" style="height:160px;right:310px;top:0px;">
+                        <div class="line" style="left:300px;width:100px;top:99px"></div>
+                        <div class="flag-right" style="border-top: 100px solid transparent;
+                            border-bottom: 100px solid transparent;"></div>
+                        <div class="smallCircle" style="right:-20px;top:95px"></div>
+                        Girls Helping Girls teamed up with Food for the Poor and Helping Hands Jamaica to give the community a new school building, with GHG contributing the funds (and some workers!), FFP providing the infrastructure, and HHJ recruiting most of the volunteer builders.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:150px;height:150px;top:1040px;right:335px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-4.png" alt="Park Mountain Primary School">
+                    <div class="transparentCircle" style="font-size: 24px;"><br>Newsletter #1</div>
+                    <div class="flagBorder" style="left:180px;top:40px;">
+                        <div class="line" style="right:310px;width:70px"></div>
+                        <div class="flag"></div>
+                        <div class="smallCircle" style="left:-20px;"></div>
+                        I am so happy to send you the very first GirlsHelpingGirls Newsletter!  It has been an exciting  year for GHG and I want to share the impact your support has had this past year.
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:150px;height:150px;top:490px;left:320px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-5.png" alt="Park Mountain Primary School">
+                    <div class="transparentCircle" style="font-size: 20px;"><br><br>Your Impact</div>
+                    <div class="flagBorder" style="height:80px;right:227px;top:0px;">
+                        <div class="line" style="left:300px;width:100px;top:59px;"></div>
+                        <div class="flag-right" style="border-top: 60px solid transparent;
+                            border-bottom: 60px solid transparent;"></div>
+                        <div class="smallCircle" style="right:-20px;top:55px"></div>
+                        In 2013, GirlsHelpingGirls established 18 scholarships in three different countries: South Africa, Kenya, and Jamaica.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:180px;height:180px;top:510px;right:360px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-6.png" alt="Park Mountain Primary School">
+                        <div class="transparentCircle" style="font-size: 24px;"><br><br>Awareness Campaigns</div>
+                        <div class="flagBorder" style="height:140px;left:260px;top:-40px;">
+                            <div class="line" style="top:89px;right:310px"></div>
+                            <div class="flag" style="border-top: 90px solid transparent;
+                                border-bottom: 90px solid transparent;"></div>
+                            <div class="smallCircle" style="left:-20px;top:85px;"></div>
+                            A large part of the GHG mandate is to create awareness about the low status of women and the positive effect of educating girls. With this in mind, GHG hosted two free documentary screenings in 2013 that explore these themes.
+                        </div>
+
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:225px;height:225px;top:630px;left:260px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-7.png" alt="Park Mountain Primary School">
+                        <div class="transparentCircle" style="font-size: 32px;"><br><br>GHG Club</div>
+                        <div class="flagBorder" style="right:283px;top:60px;">
+                            <div class="line" style="left:300px;width:100px"></div>
+                            <div class="flag-right"></div>
+                            <div class="smallCircle" style="right:-20px;"></div>
+                            In September of this past year GirlsHelpingGirls became an official community partner of Havergal College, a leading independent University preparatory day and boarding school for girls in Toronto, Ontario.
+                        </div>
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:100px;height:100px;top:680px;right:360px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-8.png" alt="Park Mountain Primary School">
+                        <div class="transparentCircle" style="font-size: 16px;"><br>Corporate Sponsors</div>
+                        <div class="flagBorder" style="height:60px;left:150px;top:30px;">
+                            <div class="line" style="top:49px;right:300px;width:90px"></div>
+                            <div class="flag" style="border-top: 50px solid transparent;
+                                border-bottom: 50px solid transparent;"></div>
+                            <div class="smallCircle" style="left:-20px;top:45px"></div>
+                            We are very happy and proud to have several corporate sponsors committed to supporting Girls Helping Girls.
+                        </div>
+
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:150px;height:150px;top:940px;left:280px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-9.png" alt="Park Mountain Primary School">
+                        <div class="transparentCircle" style="font-size: 24px;"><br>Volunteer Trips</div>
+                        <div class="flagBorder" style="height:140px;right:228px;top:0px;">
+                            <div class="line" style="left:300px;width:100px;top:89px;"></div>
+                            <div class="flag-right" style="border-top: 90px solid transparent;
+                                border-bottom: 90px solid transparent;"></div>
+                            <div class="smallCircle" style="right:-20px;top:85px;"></div>
+                            Volunteer trips are wonderful opportunities to meet and connect with people from different parts of the world, while building a deeper understanding of the joys and challenges that different people and communities face.
+                        </div>
+                </div>
+            </div>
+            
+            <div class="pinkCircle" style="width:280px;height:280px;top:770px;right:320px">
+                <div  class="grayCircle">
+                    <img class="circleImage" src="4-10.png" alt="Park Mountain Primary School">
+                        <div class="transparentCircle" style="font-size: 32px;"><br><br>Goals for 2014</div>
+                        <div class="flagBorder" style="left:330px;top:120px;">
+                            <div class="line" style="right:300px;width:120px"></div>
+                            <div class="flag"></div>
+                            <div class="smallCircle" style="left:-20px;"></div>
+                            In the coming months GirlsHelpingGirls is looking forward to growing and expanding awareness around the issue of the low status of women and the benefits of educating girls2
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        
+        
+    </body>
+</html>
