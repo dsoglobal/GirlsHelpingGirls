@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./slidersheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap-slider.js"></script>
+  
+
+</head>
+<body>
+
+  <div class = 'container'>
+    <div class = 'row'>
+      <div class = 'col-md-8'>
+        <h2> Donate to GirlsHelpingGirls </h2>
+      </div>
+    </div>
+    <div class = 'row'>
+      <div class = 'col-xs-4'>
+        <ul>
+          <li> $1-10 </li>
+          <li> $10-100 </li>
+          <li class = 'active'> $100-500 </li>
+          <li> $500-1000 </li>
+          <li> $1000-2000 </li>
+        </ul>
+      </div>
+      <div class = 'col-xs-8'>
+        <h5> Your donation of $250 will be able to finance 1 school</h5>
+        <img src = './school.jpg'> </img>
+      </div>
+        
+    </div>
+    <div class='row'>
+      <div class = 'col-xs-4'>
+        <div class = 'donationVal'> 
+          Donation Amount: $ <div class = 'sliderVal'> 0 </div>
+        </div>
+        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="2000" data-slider-step="1" data-slider-value="0"/>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    // Instantiate a slider
+    $('#ex1').slider({
+      formatter: function(value) {
+        return 'Current value: ' + value;
+      }
+    });
+
+
+  </script>
+
+
+</body>
+</html>
+
