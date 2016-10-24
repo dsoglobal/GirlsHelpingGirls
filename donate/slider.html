@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./slidersheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./js/bootstrap-slider.js"></script>
+    <script src="./js/bootstrap-slider.js"></script>
   
 
 </head>
@@ -23,7 +23,7 @@
     </div>
     <div class = 'row'>
       <div class = 'col-xs-4'>
-        <ul>
+        <ul class="donationOptions">
           <li> $1-10 </li>
           <li> $10-100 </li>
           <li class = 'active'> $100-500 </li>
@@ -40,24 +40,53 @@
     <div class='row'>
       <div class = 'col-xs-4'>
         <div class = 'donationVal'> 
-          Donation Amount: $ <div class = 'sliderVal'> 0 </div>
+          Donation Amount: $ <span class = 'sliderVal' id="sliderVal"> 0 </span>
         </div>
-        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="2000" data-slider-step="1" data-slider-value="0"/>
+        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="2000" data-slider-step="1" data-slider-value="100"/>
       </div>
     </div>
   </div>
 
   <script type="text/javascript">
-    // Instantiate a slider
-    $('#ex1').slider({
-      formatter: function(value) {
-        return 'Current value: ' + value;
-      }
-    });
+    
+    $(document).ready(function() {
+        //Instantiate a slider
+        var mySlider = $('#ex1').slider({
+            formatter: function(value) {
+              return 'Current value: ' + value;
+            }
+        });
 
+        //tried mousemove but obtained values differ by ~3 from tooltip
+        $('#slider-handle').click(function(){
+            var value = document.getElementById("tooltip-val").innerHTML;
+            console.log(value);
+            document.getElementById("sliderVal").innerHTML = value;
+
+            var selector = '.donationOptions li'
+            // $(selector).on('click', function() {
+            //   $(selector).removeClass('active');
+            //   $(this).addClass('active');
+            // });
+
+            var group;
+            if (value <10) {
+              group = 1;
+            } else if (10 <= value && value <100){
+              group = 2;
+            } else if (100 <= value && value <500){
+              group = 3;
+            } else if (500 <= value && value <1000){
+              group = 4;
+            } else {
+              group = 5;
+            }
+            $(selector).removeClass('active');
+            $('.donationOptions li:nth-child(' + group +')').addClass('active');
+        });
+    });   
 
   </script>
-
 
 </body>
 </html>
