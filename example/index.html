@@ -5,8 +5,9 @@
     <title>Example Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
+    <link rel="stylesheet" href="../global/style.css" />
     <!-- insert your custom stylesheet here -->
-    <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/output.css" />
   </head>
 
   <body class="loading">
@@ -14,14 +15,21 @@
     <!-- insert navigation bar code here -->
     <nav></nav>
 
-    <main>
+    <main class="container">
       <!-- insert your page-specific content here -->
-      <h1>Test.</h1>
+      <div class="row">
+        <h1 class="section-header">.section-header</h1>
+        <h2 class="small-header">.small-header</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 pink-section-body">.pink-section-body</div>
+        <div class="col-md-8 gray-section-body">.gray-section-body</div>
+        <div class="col-md-12 white-section-body">.white-section-body</div>
+      </div>
     </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.0.min.js"><\/script>')</script>
-
+    <script src="../vendor/jquery/dist/jquery.js"></script>
     <!-- insert your custom javascript files here -->
     <script src="js/example.js"></script>
 

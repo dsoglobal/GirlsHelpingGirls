@@ -1,0 +1,24 @@
+{
+  "name": "GirlsHelpingGirls",
+  "homepage": "https://github.com/dsoglobal/GirlsHelpingGirls",
+  "authors": [
+    "Lizzie Li <lizzie@dsoglobal.org>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap-sass": "^3.3.7",
+    "modernizr": "^3.3.1"
+  }
+}
