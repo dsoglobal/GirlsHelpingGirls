@@ -5807,7 +5807,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .section-body, .pink-section-body, .gray-section-body, .white-section-body {
-  font-family: candara;
+  font-family: "Candara";
   font-size: 24px;
   padding: 40px; }
 
@@ -5824,14 +5824,14 @@ button.close {
   background-color: white; }
 
 .section-header {
-  font-family: apple chancery;
+  font-family: "Apple Chancery";
   font-size: 40px;
   color: #f6d7e1;
   width: 100%;
   text-align: center; }
 
 .small-header {
-  font-family: Bernard MT Condensed;
+  font-family: "Bernard MT Condensed";
   font-size: 36px;
   text-align: center; }
 
