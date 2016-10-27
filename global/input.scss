@@ -1,0 +1,40 @@
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "variables";
+
+.section-body {
+	font-family: $paragraph-font;
+	font-size: $paragraph-font-size;
+	padding: 40px;
+}
+
+.pink-section-body {
+	@extend .section-body;
+	color: white;
+	background-color: $light-pink;
+}
+
+.gray-section-body {
+	@extend .section-body;
+	color: white;
+	background-color: $dark-gray;
+}
+
+.white-section-body {
+	@extend .section-body;
+	color: black;
+	background-color: white;
+}
+
+.section-header {
+	font-family: $head-font;
+	font-size: $head-font-size;
+	color: $light-pink;
+	width: $head-width;
+	text-align: center;
+}
+
+.small-header {
+	font-family: $small-head-font;
+	font-size: $small-head-font-size;
+	text-align: center;
+}
