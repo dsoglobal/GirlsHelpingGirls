@@ -24,10 +24,10 @@
 		this.picker = $('<div class="slider">'+
 							'<div class="slider-track">'+
 								'<div class="slider-selection"></div>'+
-								'<div class="slider-handle"></div>'+
+								'<div id="slider-handle" class="slider-handle"></div>'+
 								'<div class="slider-handle"></div>'+
 							'</div>'+
-							'<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'+
+							'<div class="tooltip"><div class="tooltip-arrow"></div><div id="tooltip-val" class="tooltip-inner"></div></div>'+
 						'</div>')
 							.insertBefore(this.element)
 							.append(this.element);
@@ -144,6 +144,7 @@
 		} else {
 			this.tooltip.addClass('hide');
 		}
+
 	};
 
 	Slider.prototype = {
@@ -324,6 +325,7 @@
 		},
 
 		getValue: function() {
+			console.log(this.value[0]);
 			if (this.range) {
 				return this.value;
 			}
