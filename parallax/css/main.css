@@ -316,7 +316,13 @@ body {
 }
 
 nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48;
   position: fixed;
+  text-align: center;
+  width: 100%;
   top: 0px;
   margin: 5px;
   z-index: 100000;

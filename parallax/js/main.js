@@ -10,6 +10,7 @@ function init() {
     }, 2000);
 }
 
+
 // fade in experience
 function start() {
   
@@ -23,3 +24,8 @@ $(window).load(function() {
   init();
   
 });
+
+
+
+
+
