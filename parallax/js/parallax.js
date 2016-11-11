@@ -13,6 +13,8 @@
   // Setup variables
   $window = $(window);
   $body = $('body');
+
+ 
   
     // FadeIn all sections   
   $body.imagesLoaded( function() {
